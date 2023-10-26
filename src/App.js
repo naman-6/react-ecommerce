@@ -4,7 +4,7 @@ import ProductList from "./features/product-list/ProductList";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-
+import Cart from "./features/cart/Cart";
 
 import {
   createBrowserRouter,
@@ -12,6 +12,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import CartPage from "./pages/CartPage";
+
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,11 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignupPage></SignupPage>,
   },
+  {
+    // component loading is only for testing, page will be loaded 
+    path: "/cart",
+    element: <CartPage></CartPage>
+  }
 ]);
 
 
